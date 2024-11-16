@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Política Clara</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            width: 300px;
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        #explanation {
+            margin-top: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            max-height: 600px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            font-size: 16px;
+            line-height: 1.8;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        
+        body.dark {
+            background-color: #2d1b5a;
+            color: #ffffff;
+            border: 2px solid #7f4dbb;
+        }
+
+        #explanation.dark {
+            background-color: #1b1033;
+            border: 2px solid #7f4dbb;
+            color: #ffffff;
+        }
+
+        body.light {
+            background-color: #ffffff;
+            color: #333333;
+            border: 2px solid #949393;
+        }
+
+        #explanation.light {
+            background-color: #f9f9f9;
+            border: 2px solid #858585;
+            color: #333333;
+        }
+
+        .close-btn.light {
+            color: #333333;
+        }
+
+        /* Botão de Alternância de Tema */
+        .theme-toggle {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="dark"> 
+    <h2>Política Clara</h2>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    <p>Selecione um texto de uma política de privacidade para ver a explicação.</p>
+    <div id="explanation">
+        Carregando explicação...
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

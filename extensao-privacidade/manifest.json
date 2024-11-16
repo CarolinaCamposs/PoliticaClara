@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Política Clara",
+  "version": "1.0",
+  "description": "Ajuda na explicação de políticas de privacidade.",
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon1.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "48": "icon1.png"
+  }
+}
