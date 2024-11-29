@@ -48,6 +48,7 @@
 - [Python 3.8+](https://www.python.org/)
 - Pip (gerenciador de pacotes do Python)
 - Navegador **Mozilla Firefox**
+- Chave da API Cohere
 
 ### **Passos**
 1. Clone este repositório:
@@ -71,7 +72,7 @@
    python app.py
 
 7. Carregue a extensão no Mozilla Firefox:
-   -  Abra about:debugging no Firefox.
+   -  Abra about:debugging#/runtime/this-firefox no Firefox.
    -  Clique em "Carregar Extensão Temporária" e selecione a pasta extension do projeto.
 
 ---
